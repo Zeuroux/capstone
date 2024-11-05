@@ -801,8 +801,8 @@ endif()
 # Simply because it builds the fuzzer there again with hard-coded paths.
 # See: https://github.com/google/oss-fuzz/blob/master/projects/capstone/build.sh
 # and: https://github.com/capstone-engine/capstone/issues/2454
-add_executable(fuzz_disasm ${PROJECT_SOURCE_DIR}/suite/fuzz/onefile.c ${PROJECT_SOURCE_DIR}/suite/fuzz/fuzz_disasm.c ${PROJECT_SOURCE_DIR}/suite/fuzz/platform.c)
-target_link_libraries(fuzz_disasm PRIVATE capstone)
+#add_executable(fuzz_disasm ${PROJECT_SOURCE_DIR}/suite/fuzz/onefile.c ${PROJECT_SOURCE_DIR}/suite/fuzz/fuzz_disasm.c ${PROJECT_SOURCE_DIR}/suite/fuzz/platform.c)
+#target_link_libraries(fuzz_disasm PRIVATE capstone)
 
 source_group("Source\\Engine" FILES ${SOURCES_ENGINE})
 source_group("Source\\ARM" FILES ${SOURCES_ARM})
